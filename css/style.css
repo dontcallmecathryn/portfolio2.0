@@ -185,10 +185,25 @@ body p{
   line-height: 1.5;
 }
 
-.biodiv2 img{
+/* .biodiv2 img{
   max-width: 100%;
   height: auto;
   border-radius: 16px;
+} */
+
+.biodiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.biodiv2 img {
+  width: 100%;
+  max-width: 400px; /* Set this to the desired smaller size */
+  height: auto;
+  border-radius: 16px;
+  display: block;
 }
 
 .portfolio-container{
