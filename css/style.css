@@ -260,6 +260,8 @@ body p{
   margin: 1rem;
   box-sizing: border-box;
   flex-wrap: wrap;
+  padding: 24px; /* Remove if too big */
+  background-color: #566BE6; /* Remove if too big */
 }
 
 .proj,
