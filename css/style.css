@@ -84,6 +84,11 @@ body p{
   background-color: #FFE3D1;
 }
 
+.navbar a.active {
+  text-decoration: underline;
+}
+
+
 .nav-left h1 { 
   font-weight: bold;
   display: inline-block;
@@ -272,7 +277,10 @@ body p{
   align-items: stretch;
   border: 7px solid #566BE6;
   border-radius: .875rem;
-  margin: 1rem;
+  /* margin: 1rem;  */ 
+  margin-top: 2.5rem;
+  margin-left: 1em;
+  margin-right: 1em;
   box-sizing: border-box;
   flex-wrap: wrap;
   padding: 24px; /* Remove if too big */
