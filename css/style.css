@@ -324,7 +324,9 @@ body p{
 
 .project-img img {
   width: 45vw;
+  /* width: calc(50% - 12px); */
   height: auto;
+  /* object-fit: contain; */
   border-radius: 12px;
   display: block;
 }
