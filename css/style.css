@@ -47,6 +47,7 @@ body p{
 .nav-right{
   display: flex;
   gap: 4rem;
+  margin-right: 1em;
 }
 
 .nav-right h1 a{ 
@@ -88,6 +89,9 @@ body p{
   text-decoration: underline;
 }
 
+.nav-left{
+  margin-left: 1em;
+}
 
 .nav-left h1 { 
   font-weight: bold;
