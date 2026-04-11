@@ -44,6 +44,13 @@ body p{
   margin-right: 1rem;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
 .nav-right{
   display: flex;
   gap: 4rem;
@@ -355,6 +362,30 @@ body p{
 }
 
 @media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;              /* hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #FF9C50;
+    margin-top: 1rem;
+  }
+
+  .nav-right.active {
+    display: flex;              /* show when toggled */
+  }
+}
+
+@media (max-width: 768px) {
   .project-info {
     flex-direction: column;
   }
@@ -369,8 +400,9 @@ body p{
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 1rem;
+    /* flex-direction: column;
+    gap: 1rem; */
+    justify-content: space-between;
   }
 
   .homediv1 {
@@ -420,13 +452,13 @@ body p{
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
 }
 
 input[type=submit] {
