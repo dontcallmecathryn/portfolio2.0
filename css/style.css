@@ -211,17 +211,16 @@ body p{
   display: block;
 }
 
-.portfolio-container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1px;
+  gap: 0 24px;
   padding: 40px;
-  flex-wrap: wrap;
 }
 
-.image{
-  width: 450px;
+.image {
+  width: 100%;
   position: relative;
 }
 
@@ -328,6 +327,25 @@ body p{
   height: auto;
   border-radius: 12px;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .image {
+    grid-row-end: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    columns: 1; /* for Option 1 */
+    /* or for Option 2: */
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {

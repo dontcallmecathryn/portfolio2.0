@@ -53,39 +53,42 @@
                     <div class="portfoliotitle">
                        <a href="in-the-clouds.html"> <h2>In the Clouds</h2>
                 </div></a>
-        </div>
-
+</div>
 
 <div class="image">
                 <a href="phenomaly.html"><img src="img/app-preview.png"></a>
                     <div class="portfoliotitle">
                        <a href="phenomaly.html"> <h2>Phenomaly</h2>
                 </div></a>
-        </div>
+</div>
 
-    <div class="image">
+<div class="image">
                 <a href="lateralus.html"><img src="img/lateralus-mockup.png"></a>
                     <div class="portfoliotitle">
                        <a href="lateralus.html"> <h2>Lateralus Interactive</h2>
                 </div></a>
-        </div>
+ </div>
 
-
-    <div class="image">
-            <a href="memoir.html"><img src="img/6WMmock2.png"></a>
-                <div class="portfoliotitle">
-                    <a href="memoir.html"><h2>6 Word Memoir</h2></a>
-            </div>
-    </div>
-
-
-    <div class="image">
+<div class="image">
             <a href="type.html"><img src="img/typeMock.png"></a>
                 <div class="portfoliotitle">
                     <a href="type.html"><h2>Type in Cannabis</h2></a>
             </div>
-    </div>
+</div>
 
+<div class="image">
+            <a href="memoir.html"><img src="img/6WMmock2.png"></a>
+                <div class="portfoliotitle">
+                    <a href="memoir.html"><h2>6 Word Memoir</h2></a>
+            </div>
+</div>
+
+<div class="image">
+            <a href="psa.html"><img src="img/psaMock.png"></a>
+                <div class="portfoliotitle">
+                    <a href="psa.html"><h2>PSA Poster</h2></a>
+            </div>
+</div>
 
     <!-- <div class="image">
             <a href="aktiv.html"><img src="img/2.3mock.png"></a>
@@ -94,25 +97,32 @@
             </div>
     </div> -->
 
-        <div class="image">
-            <a href="psa.html"><img src="img/psaMock.png"></a>
-                <div class="portfoliotitle">
-                    <a href="psa.html"><h2>PSA Poster</h2></a>
-            </div>
-    </div>
-
       <!-- <div class="image">
         <a href="icons.html"><img src="img/3 Icons Final.png"></a>
             <div class="portfoliotitle">
                 <a href="icons.html"><h2>3 Icons</h2></a>
         </div>
     </div> -->
-
-
-    
+   
 </div>
   
 
         <script src="" async defer></script>
+
+<script>
+  function resizeGrid() {
+    const grid = document.querySelector('.portfolio-container');
+    const items = grid.querySelectorAll('.image');
+
+    items.forEach(item => {
+      const imgHeight = item.querySelector('img').getBoundingClientRect().height;
+      item.style.gridRowEnd = `span ${Math.ceil(imgHeight + 24)}`;
+    });
+  }
+
+  window.addEventListener('load', resizeGrid);
+  window.addEventListener('resize', resizeGrid);
+</script>
+
     </body>
 </html>
