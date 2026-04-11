@@ -381,8 +381,10 @@ body p{
   }
 
   .nav-right.active {
-    display: flex;              /* show when toggled */
+    display: flex;              
+    margin-left: 1em;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -415,11 +417,11 @@ body p{
   max-width: 400px;
 }
 
- .nav-right {
+ /* .nav-right {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
+} */
 
   .home-container,
   .bio-container {

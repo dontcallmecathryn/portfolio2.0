@@ -28,8 +28,10 @@
     <div class= "nav-left">
         <h1><a href="index.html">Catie Riel</a></h1>
     </div>
-      
-    <div class="nav-right">
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-right" id="navMenu">
         <h1><a href="about.html">About</a></h1>
         <h1><a href="portfolio.html">Portfolio</a></h1>
         <h1><a href="contact.html">Contact</a></h1>
@@ -63,6 +65,13 @@
 </div>
   
 
-        <script src="" async defer></script>
+<script src="" async defer></script>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
+
     </body>
 </html>
