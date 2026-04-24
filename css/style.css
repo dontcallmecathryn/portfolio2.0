@@ -135,8 +135,8 @@ body p{
 }
 
 .homediv2{
-  background-color: #566BE6;
-  color: white;
+  /* background-color: #566BE6; */
+  /* color: white; */
   padding: 24px;
   border-radius: 10px;
   max-width: 50%;
@@ -145,17 +145,26 @@ body p{
 
 .homediv2 h1{
   margin-top: 0;
-  font-size: 24px;
+  font-size: 3em;
+  text-decoration: underline; 
+  text-decoration-color: #566BE6;
+  text-underline-offset: .3em;
+  text-decoration-thickness: 15px;
 }
 
 .homediv2 p{
-  background-color: white;
+  /* background-color: white; */ 
   color: black;
-  padding: 16px;
+  /* padding: 16px; */
   border-radius: 6px;
-  font-size: 1.25rem;
+  font-size: 2em;
   line-height: 1.5;
 }
+
+.home-portfolio{
+  padding-left: 40px;
+}
+
 
 .pagehead{
   font-size: 30px;
@@ -221,6 +230,7 @@ body p{
   border-radius: 16px;
   display: block;
 }
+
 
 .portfolio-container {
   display: grid;
