@@ -161,8 +161,71 @@ body p{
   line-height: 1.5;
 }
 
-.home-portfolio{
+.home-portfolio {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 40px;
+  padding-right: 40px;
+}
+
+.home-portfolio h1 {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  /* margin-top: 40px; */
+}
+
+.portfolio-container1{
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 16px 16px 0;
+}
+
+.portfolio-container1 img{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: .875rem;
+}
+
+
+.port-title{
+  /* width: 100%;
+  height: 100%;
+  position: absolute; */
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.port-title:hover{
+  opacity: 1;
+}
+
+.port-title h2{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.port-title > *{
+  transform: translateY(25px);
+  transition: transform 0.3s ease;
+}
+
+.port-title:hover > *{
+  transform: translateY(0px);
+}
+
+.port-title a{
+  text-decoration: none;
 }
 
 

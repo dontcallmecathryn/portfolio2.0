@@ -61,12 +61,87 @@
 <br>
 <br>
 
+
 <div class="home-portfolio">
 
-<h1>Graphic Design</h1>
+    <h1>Graphic Design</h1>
     
-<h1>UX/UI Design</h1>
-</div>  
+    <div class="portfolio-container1">
+
+            <a href="dontchuu.html">
+                <img src="img/dontchuu-packaging-exploration.png">
+            </a>
+
+
+
+            <a href="type.html">
+                <img src="img/typeMock.png">
+            </a>
+
+
+
+    </div>
+
+    <div class="portfolio-container1">
+
+
+            <a href="in-the-clouds.html">
+                <img src="img/clouds-mockup2.png">
+            </a>
+
+            <!-- <a href="in-the-clouds.html"><img src="img/clouds-mockup2.png"></a>
+                    <div class="port-title">
+                       <a href="in-the-clouds.html"> <h2>In the Clouds <br><br> Print and Graphic Design</h2>
+                    </div>
+            </a> -->
+
+            <a href="psa.html">
+                <img src="img/psaMock.png">
+            </a>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="home-portfolio">
+    <h1>UXUI Design</h1>
+     
+    <div class="portfolio-container1">
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+    </div>
+
+    <div class="portfolio-container1">
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+            <a href="phenomaly.html">
+                <img src="img/app-preview.png">
+            </a>
+
+    </div>
+    
+</div>
 
 <script src="" async defer></script>
         
@@ -74,6 +149,26 @@
   function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("active");
   }
+
+<script>
+  function resizeGrid() {
+    const grid = document.querySelectorAll('.portfolio-container');
+
+    grid.forEach(container => {
+      const items = container.querySelectorAll('.image');
+
+      items.forEach(item => {
+        const imgHeight = item.querySelector('img').getBoundingClientRect().height;
+        item.style.gridRowEnd = `span ${Math.ceil(imgHeight + 24)}`;
+      });
+    });
+  }
+
+  window.addEventListener('load', resizeGrid);
+  window.addEventListener('resize', resizeGrid);
+</script>
+
+
 </script>
 
     </body>
