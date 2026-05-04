@@ -240,6 +240,9 @@ body p{
   text-decoration-thickness: .75rem;
 }
 
+.contact-info{
+  margin-left: 53px;
+}
 
 .bio-container{
   display: flex;
@@ -294,6 +297,59 @@ body p{
   display: block;
 }
 
+.case-study{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.case-img{
+  width: 50%;
+}
+
+.case-img img{
+  width: 100%;
+}
+
+.case-info{
+  width: 50%;
+}
+
+.phenomaly-gifs{
+  width: 50%;
+  height: auto;
+}
+
+.case-study-other{
+  margin-left: 2em;
+  margin-right: 3em;
+}
+
+.two-img-side{
+display: flex;
+align-content: center;
+margin-left: 2em;
+margin-right: 3em;
+gap: 1em;
+}
+
+.two-img-side img{
+width: 50%;
+}
+
+.four-img-side{
+display: flex;
+align-content: center;
+margin-left: 2em;
+margin-right: 5em;
+gap: 1em;
+}
+
+.four-img-side img{
+width: 25%;
+}
 
 .portfolio-container {
   display: grid;
@@ -554,13 +610,24 @@ input[type=submit] {
 
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  margin-left: 53px;
   gap: 20px;
-  margin-top: 25px;
 }
 
 .socials img {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 768px) {
+  .case-study {
+    flex-direction: column;
+  }
+
+  .case-img,
+  .case-info {
+    width: 100%;
+  }
 }
